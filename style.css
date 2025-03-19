@@ -1,0 +1,258 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradiente para fundo */
+    color: #fff; /* Cor do texto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+  
+/* Container Principal */
+.main-container {
+    text-align: center;
+    background-color: rgba(52, 152, 219, 0.8); /* Fundo semitransparente em tom de azul */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+  
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #5e5e5e; /* Cor para o título */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombras no título para destacar */
+}
+  
+h2 {
+    color: #5e5e5e;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 2.5em;
+    color: #1abc9c; /* Cor para o título */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13); /* Sombras no título para destacar */
+}
+  
+/* Parágrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #ecf0f1; /* Cor de texto para o parágrafo */
+}
+  
+/* Botões de ação */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Botão WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #1abc9c;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 15px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Botão de Formulário */
+.form-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #1abc9c;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 15px;
+}
+
+.form-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Botão de Voltar */
+.back-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #1abc9c;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 15px;
+}
+
+.back-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+    margin-bottom: 30px;
+}
+
+/* Centralizando o botão de voltar */
+.back-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    margin: 15px;
+    font-size: 2.5em; /* Ícones maiores */
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3);
+    color: #1abc9c; /* Cor para os ícones no hover */
+}
+
+/* Estilos do formulário embutido */
+.container {
+    background-color: #fff; /* Agora o fundo do formulário é branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+/* Personalização do iframe do formulário */
+.form-container {
+    background-color: #fff; /* Fundo branco para o container do formulário */
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 1420px; /* Altura fixa do formulário */
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Cor do texto dentro do formulário */
+.form-container p, .form-container label, .form-container span, .form-container div {
+    color: #333; /* Texto visível, com tom escuro */
+}
+
+/* Botão de WhatsApp */
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #ddd;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Adicionando espaçamento para melhorar o visual entre o texto e o formulário */
+.whatsapp-container p {
+    margin-top: 30px; /* Espaço acima do texto */
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+    font-size: 1.1em;
+    color: #ecf0f1; /* Cor clara para o texto */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste a largura do container para telas menores */
+    .main-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Aumentando a largura do formulário no celular */
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    /* Ajustes no iframe para celulares */
+    iframe {
+        height: 1780px; /* Ajuste a altura do iframe para uma tela menor */
+    }
+}
+
+@media (max-width: 600px) {
+    .social-icons a {
+        font-size: 2em; /* Ícones menores em telas pequenas */
+    }
+
+    .action-buttons a {
+        font-size: 1em; /* Botões com texto menor */
+        padding: 10px 25px;
+    }
+
+    /* Ajuste o botão de WhatsApp */
+    .whatsapp-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 1780px; /* Altura fixa do formulário */
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+}
