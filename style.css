@@ -4,22 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
+/* Corpo da página */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradiente para fundo */
-    color: #fff; /* Cor do texto padrão */
+    font-family: 'Arial', sans-serif !important; /* Usando Arial como fonte padrão */
+    background: linear-gradient(135deg, #2c3e50, #16181a);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
-  
+
 /* Container Principal */
 .main-container {
     text-align: center;
-    background-color: rgba(52, 152, 219, 0.8); /* Fundo semitransparente em tom de azul */
+    background: linear-gradient(135deg, #4d4d4d9a, #1d1d1d7e); /* Degradê preto para cinza */
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -27,35 +28,45 @@ body {
     max-width: 1200px;
     backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
 }
-  
+
 /* Título */
+header {
+    text-align: center;
+    width: 100%; /* Garante que ocupa toda a largura */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+}
+
 h1 {
+    font-family: 'Arial', sans-serif; /* Garantindo que o título use a fonte Arial */
+    font-weight: 700; /* Negrito */
     font-size: 2.5em;
-    color: #5e5e5e; /* Cor para o título */
+    color: #1abc9c; /* Cor para o título */
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombras no título para destacar */
 }
-  
+
 h2 {
-    color: #5e5e5e;
+    font-family: 'Arial', sans-serif;
+    color: #dddddd;
     font-size: 1.1em;
     margin-bottom: 25px;
 }
 
 h3 {
+    font-family: 'Arial', sans-serif;
     font-size: 2.5em;
     color: #1abc9c; /* Cor para o título */
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13); /* Sombras no título para destacar */
 }
-  
+
 /* Parágrafos */
 p {
     font-size: 1.1em;
     margin-bottom: 25px;
     color: #ecf0f1; /* Cor de texto para o parágrafo */
 }
-  
+
 /* Botões de ação */
 .action-buttons {
     display: flex;
@@ -89,7 +100,7 @@ p {
     color: white;
     background-color: #1abc9c;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
     margin: 15px;
 }
@@ -99,7 +110,7 @@ p {
     transform: scale(1.05);
 }
 
-/* Botão de Voltar */
+/* Botões de Voltar */
 .back-btn {
     display: inline-block;
     padding: 15px 35px;
@@ -107,7 +118,7 @@ p {
     color: white;
     background-color: #1abc9c;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
     margin: 15px;
 }
@@ -115,7 +126,6 @@ p {
 .back-btn:hover {
     background-color: #16a085;
     transform: scale(1.05);
-    margin-bottom: 30px;
 }
 
 /* Centralizando o botão de voltar */
@@ -128,26 +138,39 @@ p {
 /* Ícones de redes sociais */
 .social-icons {
     margin-top: 25px;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
 }
 
 .social-icons a {
     margin: 15px;
-    font-size: 2.5em; /* Ícones maiores */
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free', sans-serif !important; /* Garante que a fonte Font Awesome seja aplicada */
+    font-size: 2.5em; /* Tamanho maior dos ícones */
     color: #fff;
     transition: transform 0.3s, color 0.3s;
+    display: inline-flex; /* Garante que o ícone seja centralizado corretamente */
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Tamanho fixo para os ícones */
+    height: 50px; /* Tamanho fixo */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    background-color: #333; /* Fundo escuro para os ícones */
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra ao redor */
 }
 
 .social-icons a:hover {
-    transform: scale(1.3);
-    color: #1abc9c; /* Cor para os ícones no hover */
+    transform: scale(1.3); /* Aumenta um pouco o tamanho no hover */
+    color: #1abc9c; /* Cor no hover */
+    background-color: #444; /* Leve alteração na cor de fundo no hover */
 }
 
 /* Estilos do formulário embutido */
 .container {
-    background-color: #fff; /* Agora o fundo do formulário é branco */
+    background: linear-gradient(135deg, #4d4d4d9a, #1d1d1d7e); /* Degradê preto para cinza */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais destacada */
     width: 100%;
     max-width: 800px;
     margin-top: 30px;
@@ -155,7 +178,7 @@ p {
 
 /* Personalização do iframe do formulário */
 .form-container {
-    background-color: #fff; /* Fundo branco para o container do formulário */
+    background-color: #ffffff00; /* Fundo branco para o container do formulário */
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -229,30 +252,5 @@ footer {
     /* Ajustes no iframe para celulares */
     iframe {
         height: 1780px; /* Ajuste a altura do iframe para uma tela menor */
-    }
-}
-
-@media (max-width: 600px) {
-    .social-icons a {
-        font-size: 2em; /* Ícones menores em telas pequenas */
-    }
-
-    .action-buttons a {
-        font-size: 1em; /* Botões com texto menor */
-        padding: 10px 25px;
-    }
-
-    /* Ajuste o botão de WhatsApp */
-    .whatsapp-btn {
-        font-size: 1em;
-        padding: 12px 20px;
-    }
-
-    iframe {
-        width: 100%;
-        height: 1780px; /* Altura fixa do formulário */
-        border: none;
-        border-radius: 5px;
-        margin-top: 20px;
     }
 }
